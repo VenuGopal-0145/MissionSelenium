@@ -46,7 +46,7 @@ public class Links_page {
 					 System.out.println(valString);
 				 else 
 					 continue;
-				//Thread.sleep(4000);
+				Thread.sleep(4000);
 			 }
 		 }
 		
