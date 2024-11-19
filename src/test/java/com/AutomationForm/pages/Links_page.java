@@ -11,11 +11,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Links_page {
 	public WebElement Home_new,Home_Pwp,Get_code,Api_201,Api_204,Api_301,Api_400,Api_401,Api_403,Api_404;
-	public String urlString="https://www.tutorialspoint.com/selenium/practice/links.php";
+	public String url="https://www.tutorialspoint.com/selenium/practice/links.php";
 	
 	public void linkPage() throws InterruptedException {
 		WebDriver driver=new ChromeDriver();
-		driver.navigate().to(urlString);
+		driver.navigate().to(url);
 		driver.manage().window().maximize();
 		
 		Home_new=driver.findElement(By.linkText("Home"));
@@ -46,7 +46,7 @@ public class Links_page {
 					 System.out.println(valString);
 				 else 
 					 continue;
-				// Thread.sleep(4000);
+				//Thread.sleep(4000);
 			 }
 		 }
 		
